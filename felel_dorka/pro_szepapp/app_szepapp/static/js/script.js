@@ -1,0 +1,1 @@
+confirm("Ez egy felugró ablak.")

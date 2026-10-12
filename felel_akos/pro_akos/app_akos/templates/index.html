@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Hello {{ nev }}!
+    </h1>
+    <p>
+        Az általad beírt szám duplája ez: {{ dupla }}
+    </p>
+    <p>A kedvenc számaim, amelyeket ajánlok megfontolásra:</p>
+    <ul>
+        {% for szam in szamok %}
+            {% if szam <= 5 %}
+            <li>{{ szam }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
