@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app_hetedik.views import view_hetedik
+from app_hetedik.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', view_hetedik),
+    path('uj/mufaj/', view_uj_mufaj),
+    path('uj/mufaj/kuld/', view_uj_mufaj_kuld),
+    path('uj/darab/', view_uj_darab),
+            
 ]

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Új műfaj</title>
+</head>
+<body>
+    <form action="kuld/">
+        {% csrf_token %}
+        
+        <label for="ajdi_input">ajdi:</label> <input type="number" name="ajdi" id="ajdi_input">
+        <label for="nev_input">nev:</label> <input type="text" name="nev" id="nev_input">
+
+        <button type="submit">Küld</button>
+    </form>
+</body>
+</html>
