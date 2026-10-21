@@ -39,6 +39,9 @@ def view_uj_mufaj(request):
     return render(request, template, context)
 
 
+def view_mufaj_import(request):
+    return render(request, 'import.html', {})
+
 def view_uj_mufaj_kuld(request):
     if request.method!='POST':
         return HttpResponse('az űrlap kitöltésével szabad csak idejönni!')
