@@ -25,6 +25,7 @@ urlpatterns = [
     path('uj/mufaj/', view_uj_mufaj),
     path('uj/mufaj/kuld/', view_uj_mufaj_kuld),
     path('uj/mufaj/import/', view_mufaj_import),
+    path('uj/mufaj/import/kuld/', view_mufaj_import_kuld),
     path('uj/darab/', view_uj_darab),
             
 ]

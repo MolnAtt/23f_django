@@ -8,6 +8,12 @@
 <body>
     <h1>Sok műfaj importálása</h1>
 
-    <textarea name="" id=""></textarea>
+    <form action="kuld/" method="POST">
+        {% csrf_token %}
+        <textarea name="krikszkraksz" cols="150" rows="30" placeholder="Ide írd a szöveget"></textarea>
+        <button type="submit">Küldjed el!</button>
+    </form>
+
+
 </body>
 </html>
